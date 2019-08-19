@@ -4,11 +4,12 @@ Aims to predict areas with high likelihood of ore deposits based on multiple dat
 ### Datasets required:
 - Major mineral deposits of the world - https://mrdata.usgs.gov/major-deposits/
 - Current satellite data - Sentinel 2
-- Digital elevation model
+- Digital elevation model - https://www.eorc.jaxa.jp/ALOS/en/aw3d30/data/index.htm
 - Previous locations of the current deposit point - Continental movement modelling
 - Previous estimated climate
 - Volcanic activity
 - Seismic activity
+- Magnetic anomolies - https://www.ngdc.noaa.gov/geomag/emag2.html?fbclid=IwAR1gseHiQ9vb0mCY0-ZrM9j7kjxhS3Gyry1bWKhYeFeH_QY6gALwT7rwwLk
 - Direction of current continental movement
 - Vegetation indices (perhaps minerals in the soil affect this)
 - Geospatial indices (calculated from above data)
