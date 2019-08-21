@@ -7,11 +7,11 @@ Aims to predict areas with high likelihood of ore deposits based on multiple dat
 - Digital elevation model - https://www.eorc.jaxa.jp/ALOS/en/aw3d30/data/index.htm
 - Previous locations of the current deposit point - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Previous estimated climate - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
-- Volcanic activity
+- Volcanic activity - http://volcano.oregonstate.edu/volcano_table
 - Seismic activity
 - Magnetic anomolies - https://www.ngdc.noaa.gov/geomag/emag2.html?fbclid=IwAR1gseHiQ9vb0mCY0-ZrM9j7kjxhS3Gyry1bWKhYeFeH_QY6gALwT7rwwLk
 - Direction of current continental movement
-- Vegetation indices (perhaps minerals in the soil affect this)
+- Vegetation indices (perhaps minerals in the soil affect this) - From Sentinel images
 - Geospatial indices (calculated from above data)
 
 ### Steps:
