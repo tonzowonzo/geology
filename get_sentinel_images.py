@@ -10,6 +10,7 @@ df = pd.read_csv("data/geological/ofr20051294/deposit.csv")
 plt.scatter(df["longitude"].values, df["latitude"].values)
 
 tile_size = 0.02
+
 # Create bounds 
 if not os.path.exists("geology_footprints.csv"):
     df = df[["dep_name", "country", "latitude", "longitude", "commodity", "dep_type"]]
@@ -35,6 +36,7 @@ if not os.path.exists("geology_footprints.csv"):
 df = pd.read_csv("geology_footprints.csv")
 df.set_index("Unnamed: 0", inplace=True)
 footprint = df["wkt"][0]
+
 footprint = f"POINT ({df['longitude'][0]} {df['latitude'][0]})"
 api = SentinelAPI(username, password, 'https://scihub.copernicus.eu/dhus')
 # search by polygon, time, and SciHub query keywords
@@ -42,3 +44,10 @@ products = api.query(footprint,
                      platformname='Sentinel-2',
                      area_relation='Intersects',
                      cloudcoverpercentage=(0, 10))
+
+products_df = api.to_dataframe(products)
+
+# sort and limit to first 5 sorted products
+products_df_sorted = products_df.sort_values(['cloudcoverpercentage', 'ingestiondate'], ascending=[True, True])
+api.download(products_df_sorted.index[0])
+
