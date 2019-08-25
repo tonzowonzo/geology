@@ -7,6 +7,8 @@ import rasterio
 from rasterio.plot import show
 import shapely
 from shapely.geometry import box
+from rasterio.enums import Resampling
+
 
 os.getcwd()
 # Read in geology csv.
@@ -64,10 +66,16 @@ for i in df.index:
     for img_loc in os.listdir(f"data/satellite/" + img_name + ".SAFE" + "/GRANULE/"):
         for img in os.listdir(f"data/satellite/" + img_name + ".SAFE" + "/GRANULE/" +
                               img_loc + "/IMG_DATA/"):
-            output_location = f"data/satellite/clipped_{df["]}"
+            # Resample images.
+            with rasterio.open(f"data/satellite/" + img_name + ".SAFE" + "/GRANULE/" +
+                              img_loc + "/IMG_DATA/" + img) as dataset:
+                data = dataset.read(out_shape=(dataset.height // 100, dataset.width // 100),
+                        resampling=Resampling.bilinear)
+                show(data)
+                
             # Load in image to be clipped.
-            data = rasterio.open(f"data/satellite/" + img_name + ".SAFE" + "/GRANULE/" +
-                              img_loc + "/IMG_DATA/" + img)
+            #data = rasterio.open(f"data/satellite/" + img_name + ".SAFE" + "/GRANULE/" +
+            #                  img_loc + "/IMG_DATA/" + img)
             show((data, 1), cmap='terrain')
             # Create bounding box for clipping image.
             minx, miny = df["lower left lat"][i], df["lower left long"][i]
