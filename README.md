@@ -10,6 +10,8 @@ Aims to predict areas with high likelihood of ore deposits based on multiple dat
 - Previous locations of the current deposit point - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Previous estimated climate - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Volcanic activity - http://volcano.oregonstate.edu/volcano_table
+- Hydrothermal activity - 
+- Groundwater - https://water.usgs.gov/ogw/aquifer/map.html (USA)
 - Seismic activity - https://www.kaggle.com/usgs/earthquake-database/downloads/earthquake-database.zip/1
 - Magnetic anomolies - https://www.ngdc.noaa.gov/geomag/emag2.html?fbclid=IwAR1gseHiQ9vb0mCY0-ZrM9j7kjxhS3Gyry1bWKhYeFeH_QY6gALwT7rwwLk
 - Direction of current continental movement
