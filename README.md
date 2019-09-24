@@ -4,9 +4,9 @@ Aims to predict areas with high likelihood of ore deposits based on multiple dat
 ### Datasets required:
 - Major mineral deposits of the world - https://mrdata.usgs.gov/major-deposits/
 - Current satellite data - Sentinel 2
-- Digital elevation model
-- Geological map
-- Soil map
+- Digital elevation model - https://nationalmap.gov/small_scale/atlasftp.html?openChapters=chpgeol%2Cchpbio%2Cchpwater#chpwater
+- Geological map - https://nationalmap.gov/small_scale/atlasftp.html?openChapters=chpgeol%2Cchpbio%2Cchpwater#chpwater
+- Soil map - https://nationalmap.gov/small_scale/atlasftp.html?openChapters=chpgeol%2Cchpbio%2Cchpwater#chpwater
 - Previous locations of the current deposit point - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Previous estimated climate - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Volcanic activity - http://volcano.oregonstate.edu/volcano_table
