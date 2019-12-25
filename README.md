@@ -11,7 +11,7 @@ Aims to predict areas with high likelihood of ore deposits based on multiple dat
 - Previous estimated climate - https://www.earthbyte.org/paleomap-paleoatlas-for-gplates/
 - Volcanic activity - http://volcano.oregonstate.edu/volcano_table
 - Hydrothermal activity - https://www.dmp.wa.gov.au/Petroleum/Geothermal-energy-2249.aspx?fbclid=IwAR2lsLKLYqA8tM25z5Tbm9iw2Q66JQqJym1M06-0gtGd2wZfbNfz8jq2Ohc
-- Groundwater - https://www.narvis.com.au/water/groundwater-areas/
+- Groundwater - http://www.bom.gov.au/water/groundwater/explorer/map.shtml
 - Seismic activity - https://www.kaggle.com/usgs/earthquake-database/downloads/earthquake-database.zip/1
 - Magnetic anomolies - 
 - Gravitational anomalies - 
